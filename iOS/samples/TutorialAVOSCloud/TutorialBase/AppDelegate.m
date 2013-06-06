@@ -1,14 +1,15 @@
 
-#import "AppDelegate.h"
+#define appID @"orsawqip6wjgsjaow4oevvu395s7m4dijy7fvn9ex2f2a7et"
+#define appKey @"yvu4z4b66dwgmsgk3p6e6y1pz9beu4cbtq9houjdm3ci8j7u"
 
+
+#import "AppDelegate.h"
 #import <AVOSCloud/AVOSCloud.h>
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 
-#define appID @"orsawqip6wjgsjaow4oevvu395s7m4dijy7fvn9ex2f2a7et"
-#define appKey @"yvu4z4b66dwgmsgk3p6e6y1pz9beu4cbtq9houjdm3ci8j7u"
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
