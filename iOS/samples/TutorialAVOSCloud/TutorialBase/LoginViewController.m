@@ -6,7 +6,7 @@
 #import "LoginViewController.h"
 #import "RegisterViewController.h"
 
-#import <Paas/AVParse.h>
+#import <AVOSCloud/AVOSCloud.h>
 
 @implementation LoginViewController
 

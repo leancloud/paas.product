@@ -1,7 +1,7 @@
 
 #import "AppDelegate.h"
 
-#import <Paas/AVParse.h>
+#import <AVOSCloud/AVOSCloud.h>
 
 @implementation AppDelegate
 
@@ -13,9 +13,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Init AVOS Cloud with app id and app key.
-    [AVPaas setApplicationId:appID
+    [AVOSCloud setApplicationId:appID
                    clientKey:appKey];
-    [AVPaas useAVCloudUS];
+    [AVOSCloud useAVCloudUS];
     
     // Override point for customization after application launch.
     return YES;

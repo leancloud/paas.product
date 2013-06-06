@@ -6,7 +6,7 @@
 
 #import "RegisterViewController.h"
 
-#import <Paas/AVParse.h>
+#import <AVOSCloud/AVOSCloud.h>
 
 @interface RegisterViewController ()
 

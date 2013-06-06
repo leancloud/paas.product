@@ -7,7 +7,7 @@
 #import "WallPicturesViewController.h"
 #import "UploadImageViewController.h"
 
-#import <Paas/AVParse.h>
+#import <AVOSCloud/AVOSCloud.h>
 
 #import "Constants.h"
 
@@ -109,7 +109,7 @@
         UIView *wallImageView = [[UIView alloc] initWithFrame:CGRectMake(10, originY, self.view.frame.size.width - 20 , 300)];
         
         //Add the image
-        AVFile *image = (PFFile *)[wallObject objectForKey:KEY_IMAGE];
+        AVFile *image = (AVFile *)[wallObject objectForKey:KEY_IMAGE];
         UIImageView *userImage = [[UIImageView alloc] initWithImage:[UIImage imageWithData:image.getData]];
         userImage.frame = CGRectMake(0, 0, wallImageView.frame.size.width, 200);
         [wallImageView addSubview:userImage];

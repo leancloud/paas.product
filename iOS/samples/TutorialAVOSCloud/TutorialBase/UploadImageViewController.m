@@ -6,7 +6,7 @@
 
 #import "UploadImageViewController.h"
 
-#import <Paas/AVParse.h>
+#import <AVOSCloud/AVOSCloud.h>
 
 #import "Constants.h"
 
