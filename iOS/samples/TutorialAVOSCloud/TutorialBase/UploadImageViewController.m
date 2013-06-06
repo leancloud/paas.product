@@ -1,9 +1,7 @@
 //
 //  TPUploadImageViewController.m
-//  TutorialBase
+//  TutorialAVOSCloud
 //
-//  Created by Antonio MG on 7/4/12.
-//  Copyright (c) 2012 AMG. All rights reserved.
 //
 
 #import "UploadImageViewController.h"
@@ -75,31 +73,28 @@
     //Disable the send button until we are ready
     self.navigationItem.rightBarButtonItem.enabled = NO;
     
-    
     //Place the loading spinner
     UIActivityIndicatorView *loadingSpinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     
     [loadingSpinner setCenter:CGPointMake(self.view.frame.size.width/2.0, self.view.frame.size.height/2.0)];
     [loadingSpinner startAnimating];
-    
     [self.view addSubview:loadingSpinner];
-    
     
     //Upload a new picture
     NSData *pictureData = UIImagePNGRepresentation(self.imgToUpload.image);
     
-    PFFile *file = [PFFile fileWithName:@"img" data:pictureData];
+    AVFile *file = [AVFile fileWithName:@"img" data:pictureData];
     [file saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         
         if (succeeded){
             
             //Add the image to the object, and add the comments, the user, and the geolocation (fake)
-            PFObject *imageObject = [PFObject objectWithClassName:WALL_OBJECT];
+            AVObject *imageObject = [AVObject objectWithClassName:WALL_OBJECT];
             [imageObject setObject:file forKey:KEY_IMAGE];
             [imageObject setObject:[PFUser currentUser].username forKey:KEY_USER];
             [imageObject setObject:self.commentTextField.text forKey:KEY_COMMENT];
             
-            PFGeoPoint *point = [PFGeoPoint geoPointWithLatitude:52 longitude:-4];
+            AVGeoPoint *point = [AVGeoPoint geoPointWithLatitude:52 longitude:-4];
             [imageObject setObject:point forKey:KEY_GEOLOC];
             
             [imageObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {

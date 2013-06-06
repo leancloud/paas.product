@@ -1,9 +1,6 @@
 //
 //  AppDelegate.h
-//  TutorialBase
-//
-//  Created by Antonio MG on 7/13/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  TutorialAVOSCloud
 //
 
 #import <UIKit/UIKit.h>

@@ -1,9 +1,6 @@
 //
 //  LoginViewController.h
-//  TutorialBase
-//
-//  Created by Antonio MG on 6/23/12.
-//  Copyright (c) 2012 AMG. All rights reserved.
+//  TutorialAVOSCloud
 //
 
 #import <UIKit/UIKit.h>

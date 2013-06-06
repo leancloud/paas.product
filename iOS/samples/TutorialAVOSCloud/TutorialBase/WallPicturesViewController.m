@@ -1,9 +1,7 @@
 //
 //  WallPicturesViewController.m
-//  TutorialBase
+//  TutorialAVOSCloud
 //
-//  Created by Antonio MG on 6/23/12.
-//  Copyright (c) 2012 AMG. All rights reserved.
 //
 
 #import "WallPicturesViewController.h"
@@ -104,14 +102,14 @@
     //For every wall element, put a view in the scroll
     int originY = 10;
     
-    for (PFObject *wallObject in self.wallObjectsArray){
+    for (AVObject *wallObject in self.wallObjectsArray){
         
         
         //Build the view with the image and the comments
         UIView *wallImageView = [[UIView alloc] initWithFrame:CGRectMake(10, originY, self.view.frame.size.width - 20 , 300)];
         
         //Add the image
-        PFFile *image = (PFFile *)[wallObject objectForKey:KEY_IMAGE];
+        AVFile *image = (PFFile *)[wallObject objectForKey:KEY_IMAGE];
         UIImageView *userImage = [[UIImageView alloc] initWithImage:[UIImage imageWithData:image.getData]];
         userImage.frame = CGRectMake(0, 0, wallImageView.frame.size.width, 200);
         [wallImageView addSubview:userImage];
@@ -159,7 +157,7 @@
 -(void)getWallImages
 {
     //Prepare the query to get all the images in descending order
-    PFQuery *query = [PFQuery queryWithClassName:WALL_OBJECT];
+    AVQuery *query = [AVQuery queryWithClassName:WALL_OBJECT];
     [query orderByDescending:KEY_CREATION_DATE];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         
@@ -189,8 +187,6 @@
 
 -(IBAction)logoutPressed:(id)sender
 {
-    //TODO
-    //If logout succesful:
     [self.navigationController popViewControllerAnimated:YES];
 }
 

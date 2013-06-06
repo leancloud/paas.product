@@ -1,10 +1,3 @@
-//
-//  AppDelegate.m
-//  TutorialBase
-//
-//  Created by Antonio MG on 7/13/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
 
 #import "AppDelegate.h"
 
@@ -14,14 +7,15 @@
 
 @synthesize window = _window;
 
-
+#define appID @"orsawqip6wjgsjaow4oevvu395s7m4dijy7fvn9ex2f2a7et"
+#define appKey @"yvu4z4b66dwgmsgk3p6e6y1pz9beu4cbtq9houjdm3ci8j7u"
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //Register our parse app
-    [Parse setApplicationId:appID
+    [AVPaas setApplicationId:appID
                   clientKey:appKey];
-    [Parse useAVCloudUS];
+    [AVPaas useAVCloudUS];
     
     // Override point for customization after application launch.
     return YES;

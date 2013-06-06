@@ -1,9 +1,7 @@
 //
 //  RegisterViewController.m
-//  TutorialBase
+//  TutorialAVOSCloud
 //
-//  Created by Antonio MG on 6/27/12.
-//  Copyright (c) 2012 AMG. All rights reserved.
 //
 
 #import "RegisterViewController.h"
@@ -56,7 +54,7 @@
 ////Sign Up Button pressed
 -(IBAction)signUpUserPressed:(id)sender
 {
-    PFUser *user = [PFUser user];
+    AVUser *user = [AVUser user];
     user.username = self.userRegisterTextField.text;
     user.password = self.passwordRegisterTextField.text;
     

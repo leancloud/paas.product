@@ -1,9 +1,6 @@
 //
 //  LoginViewController.m
-//  TutorialBase
-//
-//  Created by Antonio MG on 6/23/12.
-//  Copyright (c) 2012 AMG. All rights reserved.
+//  TutorialAVOSCloud
 //
 
 #import "LoginViewController.h"
@@ -39,7 +36,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    //Delete me
     self.userTextField.placeholder = @"Your User name";
     self.userTextField.text = @"";
     self.passwordTextField.placeholder = @"Your password";
@@ -61,7 +57,7 @@
 //Login button pressed
 -(IBAction)logInPressed:(id)sender
 {
-    [PFUser logInWithUsernameInBackground:self.userTextField.text password:self.passwordTextField.text block:^(PFUser *user, NSError *error) {
+    [AVUser logInWithUsernameInBackground:self.userTextField.text password:self.passwordTextField.text block:^(AVUser *user, NSError *error) {
         if (user) {
             //Open the wall
              [self performSegueWithIdentifier:@"LoginSuccesful" sender:self];
