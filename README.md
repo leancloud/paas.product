@@ -206,7 +206,7 @@ git clone git@github.com:avos/paas.product.git
 }
 ```
 
-## Load Images
+## 加载图片
 
 ```
 -(void)loadWallViews
