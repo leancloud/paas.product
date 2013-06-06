@@ -5,6 +5,7 @@
 
 #import "AppDelegate.h"
 #import <AVOSCloud/AVOSCloud.h>
+#import <AVOSCloud/AVOSCloudUI.h>
 
 @implementation AppDelegate
 
