@@ -41,7 +41,7 @@ git clone git@github.com:avos/paas.product.git
 
 ```
 #import "AppDelegate.h"
-#import <Paas/AVParse.h>
+#import <AVOSCloud/AVOSCloud.h>
 ```
 
 ## 初始化Keys
@@ -52,9 +52,9 @@ git clone git@github.com:avos/paas.product.git
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Init AVOS Cloud with app id and app key.
-    [AVPaas setApplicationId:appID
+    [AVOSCloud setApplicationId:appID
                    clientKey:appKey];
-    [AVPaas useAVCloudUS];
+    [AVOSCloud useAVCloudUS];
     
     // Override point for customization after application launch.
     return YES;
@@ -71,7 +71,7 @@ git clone git@github.com:avos/paas.product.git
 ```
 -(IBAction)logInPressed:(id)sender
 {
-    [PFUser logInWithUsernameInBackground:self.userTextField.text password:self.passwordTextField.text block:^(PFUser *user, NSError *error) {
+    [AVUser logInWithUsernameInBackground:self.userTextField.text password:self.passwordTextField.text block:^(AVUser *user, NSError *error) {
         if (user) {
             //Open the wall
              [self performSegueWithIdentifier:@"LoginSuccesful" sender:self];
