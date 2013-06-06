@@ -12,9 +12,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //Register our parse app
+    // Init AVOS Cloud with app id and app key.
     [AVPaas setApplicationId:appID
-                  clientKey:appKey];
+                   clientKey:appKey];
     [AVPaas useAVCloudUS];
     
     // Override point for customization after application launch.
