@@ -283,7 +283,7 @@ git clone git@github.com:avos/paas.product.git
 
 为了可以在设备上正常运行app，您需要手工copy bundle
 
-
+![copy resource bundle](images/avoscloudui-bundle.png)
 
 # 下载完整示例
 
