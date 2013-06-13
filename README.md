@@ -35,7 +35,11 @@ git clone git@github.com:avos/paas.product.git
 
 # 将AVOS Cloud SDK加入到工程中
 
-![add sdk](images/add-avoscloud-sdk.png) ![avos cloud framework](images/avoscloud-framework.png)
+使用Finder打开sdk所在的位置，如下图所示
+![add sdk](images/add-avoscloud-sdk.png)
+
+将SDK加入到project中，如下图所示
+![avos cloud framework](images/avoscloud-framework.png)
 
 # 初始化AVOS Cloud SDK
 
