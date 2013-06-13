@@ -27,6 +27,9 @@
 		B8811DFD15B0501100F6F58A /* UploadImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8811DFB15B0501100F6F58A /* UploadImageViewController.m */; };
 		FE402D0A1760BEBD00230DB1 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE402D091760BEBD00230DB1 /* AVOSCloud.framework */; };
 		FE6B4891175D9D5D007DE0D9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6B4890175D9D5D007DE0D9 /* CoreLocation.framework */; };
+		FEC916221769A546000200ED /* AVOSCloudUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FEC9161F1769A546000200ED /* AVOSCloudUI.bundle */; };
+		FEC916231769A546000200ED /* SinaWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FEC916201769A546000200ED /* SinaWeibo.bundle */; };
+		FEC916241769A546000200ED /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FEC916211769A546000200ED /* SVProgressHUD.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +62,9 @@
 		B8811DFB15B0501100F6F58A /* UploadImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImageViewController.m; sourceTree = "<group>"; };
 		FE402D091760BEBD00230DB1 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloud.framework; path = "../../release-v1.0/AVOSCloud.framework"; sourceTree = "<group>"; };
 		FE6B4890175D9D5D007DE0D9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FEC9161F1769A546000200ED /* AVOSCloudUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AVOSCloudUI.bundle; path = "../../release-v1.0/AVOSCloud.framework/Resources/AVOSCloudUI.bundle"; sourceTree = "<group>"; };
+		FEC916201769A546000200ED /* SinaWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SinaWeibo.bundle; path = "../../release-v1.0/AVOSCloud.framework/Resources/SinaWeibo.bundle"; sourceTree = "<group>"; };
+		FEC916211769A546000200ED /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = "../../release-v1.0/AVOSCloud.framework/Resources/SVProgressHUD.bundle"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,9 @@
 		B8811D8315B049AD00F6F58A = {
 			isa = PBXGroup;
 			children = (
+				FEC9161F1769A546000200ED /* AVOSCloudUI.bundle */,
+				FEC916201769A546000200ED /* SinaWeibo.bundle */,
+				FEC916211769A546000200ED /* SVProgressHUD.bundle */,
 				B8811D9815B049AE00F6F58A /* TutorialBase */,
 				B8811D9115B049AE00F6F58A /* Frameworks */,
 				B8811D8F15B049AE00F6F58A /* Products */,
@@ -225,6 +234,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC916221769A546000200ED /* AVOSCloudUI.bundle in Resources */,
+				FEC916231769A546000200ED /* SinaWeibo.bundle in Resources */,
+				FEC916241769A546000200ED /* SVProgressHUD.bundle in Resources */,
 				B8811D9D15B049AE00F6F58A /* InfoPlist.strings in Resources */,
 				B8811DA615B049AE00F6F58A /* MainStoryboard.storyboard in Resources */,
 			);
@@ -335,7 +347,10 @@
 					"\"$(SRCROOT)/../../release-v1.0/Versions/A\"",
 					"\"$(SRCROOT)/../../release-v1.0/Versions/Current\"",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = TutorialAVOSCloud;
 				PROVISIONING_PROFILE = "68CB3177-B4D5-4551-8691-11CACAAF62FD";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1B7914F0-2772-4E18-B1C4-0204205AEF89";
@@ -365,7 +380,10 @@
 					"\"$(SRCROOT)/../../release-v1.0/Versions/A\"",
 					"\"$(SRCROOT)/../../release-v1.0/Versions/Current\"",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = TutorialAVOSCloud;
 				PROVISIONING_PROFILE = "68CB3177-B4D5-4551-8691-11CACAAF62FD";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1B7914F0-2772-4E18-B1C4-0204205AEF89";

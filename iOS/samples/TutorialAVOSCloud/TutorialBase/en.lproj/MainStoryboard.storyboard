@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3103" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="3">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="11">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
                 <navigationController id="3" sceneMemberID="viewController">
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackOpaque" id="4">
@@ -20,13 +18,13 @@
                         <segue destination="oE1-aD-aga" kind="relationship" relationship="rootViewController" id="JfH-qa-Qgn"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-113" y="-17"/>
+            <point key="canvasLocation" x="-463" y="-39"/>
         </scene>
         <!--Login View Controller - Log In-->
         <scene sceneID="KPb-wz-L6q">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ynI-WD-Mw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="oE1-aD-aga" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gdd-2G-bpO">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -89,15 +87,31 @@
                         <outlet property="passwordTextField" destination="NyS-f4-DyD" id="AlG-x9-cMu"/>
                         <outlet property="userTextField" destination="epa-6q-tmp" id="Qod-h9-2FC"/>
                         <segue destination="eVf-OV-0bl" kind="push" identifier="LoginSuccesful" id="hdL-QN-8wK"/>
+                        <segue destination="9kD-ph-GWz" kind="push" identifier="avlogin" id="DOh-Xh-WZV"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ynI-WD-Mw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="365" y="-17"/>
+            <point key="canvasLocation" x="-17" y="-39"/>
+        </scene>
+        <!--Log In View Controller-->
+        <scene sceneID="1Jo-mo-x8J">
+            <objects>
+                <viewController id="9kD-ph-GWz" customClass="AVLogInViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Is8-hh-GNI">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Av3-VG-CMm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JOi-sD-W4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="436" y="678"/>
         </scene>
         <!--Wall Pictures View Controller - Wall-->
         <scene sceneID="KfS-AS-NWm">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3ej-fe-0Ql" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="eVf-OV-0bl" customClass="WallPicturesViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h5a-qq-BvU">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -127,13 +141,13 @@
                         <outlet property="wallScroll" destination="JdV-XU-SF7" id="Ecb-KM-PPf"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ej-fe-0Ql" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1349" y="-17"/>
+            <point key="canvasLocation" x="1085" y="-297"/>
         </scene>
         <!--Upload Image View Controller - Upload-->
         <scene sceneID="jPe-MF-f9X">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MNk-3h-19I" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="LDc-rp-uc3" customClass="UploadImageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fk2-Ea-tm5">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -180,13 +194,13 @@
                         <outlet property="imgToUpload" destination="gjN-JH-kg5" id="cfa-Wi-Dh8"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MNk-3h-19I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1869" y="-17"/>
         </scene>
         <!--Register View Controller - Sign Up-->
         <scene sceneID="suK-HU-acE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vNm-CM-vmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="FbC-6i-DI5" customClass="RegisterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="URR-Ie-PBq">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -229,8 +243,9 @@
                         <segue destination="eVf-OV-0bl" kind="push" identifier="SignupSuccesful" id="IAy-A0-oDm"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNm-CM-vmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="866" y="579"/>
+            <point key="canvasLocation" x="1098" y="547"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

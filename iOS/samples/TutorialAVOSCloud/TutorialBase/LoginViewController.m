@@ -60,7 +60,8 @@
     [AVUser logInWithUsernameInBackground:self.userTextField.text password:self.passwordTextField.text block:^(AVUser *user, NSError *error) {
         if (user) {
             //Open the wall
-             [self performSegueWithIdentifier:@"LoginSuccesful" sender:self];
+            [self performSegueWithIdentifier:@"avlogin" sender:self];
+//             [self performSegueWithIdentifier:@"LoginSuccesful" sender:self];
         } else {
             //Something bad has ocurred
             NSString *errorString = [[error userInfo] objectForKey:@"error"];
