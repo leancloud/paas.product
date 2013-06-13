@@ -279,6 +279,12 @@ git clone git@github.com:avos/paas.product.git
 }
 ```
 
+# 手工添加bundle
+
+为了可以在设备上正常运行app，您需要手工copy bundle
+
+
+
 # 下载完整示例
 
 ```
