@@ -28,6 +28,8 @@ https://developer.apple.com/account/ios/certificate/certificateList.action
 
 # 使用您的app id生成对应的provision profile
 
+![dev profile](images/dev-profile.png)
+
 # 添加push相关的代码
 
 ```
