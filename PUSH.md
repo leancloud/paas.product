@@ -5,6 +5,9 @@
 
 # 登录到Apple的Developer Program Portal
 
+https://developer.apple.com/account/ios/certificate/certificateList.action
+
+
 创建您的app id，并且选择允许push。并且确保您的apple id不含有通配符
 
 ![Apple Developer Program Portal](images/push-apple-developer-port.png)
