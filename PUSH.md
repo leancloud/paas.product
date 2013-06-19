@@ -30,7 +30,7 @@ https://developer.apple.com/account/ios/certificate/certificateList.action
 
 # 添加push相关的代码
 
-···
+```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
      (UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
@@ -54,5 +54,5 @@ https://developer.apple.com/account/ios/certificate/certificateList.action
     NSLog(@"recevied %@", userInfo);
 }
 
-···
+```
 
