@@ -13,12 +13,11 @@
 
 ![Enable push](images/enable-push.png)
 
-# 导出您的push证书
+# 导出您的push证书并且保存为.p12格式 
 
 ![Export push certification](images/export-certification.png)
 
-# 下载您的push证书并且转换成.p12格式
-请注意确保您的证书在导出时不带有密码保护
+** 请注意确保您的证书在导出时不带有密码保护 **
 
 
 # 生成您的provision profile
