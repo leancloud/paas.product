@@ -1,5 +1,16 @@
+如何使用avos cloud的push功能
+============================
 
-# Log-in to the iPhone Developer Program Portal
+# 登录到apple的 Developer Program Portal
+
+创建您的app id，并且选择允许push。并且确保您的apple id不含有通配符
+
+# 下载您的push证书并且转换成.p12格式
+
+# 生成您的provision profile
+
+# 
+
 
 # Choose App IDs from the menu on the right (or click here)
 
