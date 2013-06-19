@@ -3,11 +3,23 @@
 本文将向您简单介绍如何使用AVOS cloud的推送功能。
 
 
-# 登录到apple的 Developer Program Portal
+# 登录到Apple的Developer Program Portal
 
 创建您的app id，并且选择允许push。并且确保您的apple id不含有通配符
 
+![Apple Developer Program Portal](images/push-apple-developer-port.png)
+
+# 允许app的push功能
+
+![Enable push](images/enable-push.png)
+
+# 导出您的push证书
+
+![Export push certification](images/export-certification.png)
+
 # 下载您的push证书并且转换成.p12格式
+请注意确保您的证书在导出时不带有密码保护
+
 
 # 生成您的provision profile
 
