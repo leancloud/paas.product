@@ -1,4 +1,4 @@
-package com.parse.demo;
+package com.avos.demo;
 
 import java.util.List;
 
@@ -18,7 +18,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.parse.*;
+import com.avos.avoscloud.*;
+import com.avos.avoscloud.ParseException;
 
 
 public class ToDoListActivity extends ListActivity {
@@ -39,12 +40,7 @@ public class ToDoListActivity extends ListActivity {
 			ParseQuery query = new ParseQuery(className);
 
 			query.orderByDescending("_created_at");
-
-			try {
-				todos = query.find();
-			} catch (ParseException e) {
-
-			}
+			todos = query.find();
 			return null;
 		}
 
@@ -65,7 +61,7 @@ public class ToDoListActivity extends ListActivity {
 		protected void onPostExecute(Void result) {
 			// Put the list of todos into the list view
 			ArrayAdapter<String> adapter = new ArrayAdapter<String>(ToDoListActivity.this,
-					R.layout.todo_row);
+					com.avos.demo.R.layout.todo_row);
 			for (ParseObject todo : todos) {
 				adapter.add((String) todo.get("name"));
 			}
@@ -80,7 +76,7 @@ public class ToDoListActivity extends ListActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
+		setContentView(com.avos.demo.R.layout.main);
 
 		TextView empty = (TextView) findViewById(android.R.id.empty);
 		empty.setVisibility(View.INVISIBLE);
@@ -109,8 +105,8 @@ public class ToDoListActivity extends ListActivity {
 					String name = extras.getString("name");
 					ParseObject todo = new ParseObject(className);
 					todo.put("name", name);
-                    ParseACL acl = todo.getACL();
-                    acl.setPublicReadAccess(false);
+                    //ParseACL acl = todo.getACL();
+                    //acl.setPublicReadAccess(false);
 					try {
 						todo.save();
 					} catch (ParseException e) {
@@ -145,14 +141,14 @@ public class ToDoListActivity extends ListActivity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		boolean result = super.onCreateOptionsMenu(menu);
-		menu.add(0, INSERT_ID, 0, R.string.menu_insert);
+		menu.add(0, INSERT_ID, 0, com.avos.demo.R.string.menu_insert);
 		return result;
 	}
 
 	@Override
 	public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
 		super.onCreateContextMenu(menu, v, menuInfo);
-		menu.add(0, DELETE_ID, 0, R.string.menu_delete);
+		menu.add(0, DELETE_ID, 0, com.avos.demo.R.string.menu_delete);
 	}
 
 	@Override
