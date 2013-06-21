@@ -1,6 +1,6 @@
 # 欢迎使用AVOS Cloud
 
-本教程将会向您展示如何使用AVOS Cloud SDK开发一个简单的图片应用。
+本教程将会向您展示如何使用AVOS Cloud Android SDK开发一个简单的移动应用。
 
 # 申请AVOS Cloud帐号
 
@@ -29,13 +29,24 @@ app keys将会在您的代码中使用到，同时请注意保管好您的app ke
 git clone git@github.com:avos/paas.product.git
 ```
 
-# 创建iOS工程
+# 创建Android工程
 
 ![create app](images/create-app.png)
 
-# 将AVOS Cloud SDK加入到工程中
+# 打开示例工程
 
-### 使用Finder打开sdk所在的位置，如下图所示
+### 使用IntelliJ Idea导入
+
+
+![import project](images/intellij-import.png)
+
+### 
+
+### 修改AppKey和AppId
+
+
+
+### 将sdk所在的位置，如下图所示
 
 ![add sdk](images/add-avoscloud-sdk.png)
 
