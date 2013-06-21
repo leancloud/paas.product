@@ -29,9 +29,6 @@ app keys将会在您的代码中使用到，同时请注意保管好您的app ke
 git clone git@github.com:avos/paas.product.git
 ```
 
-# 创建Android工程
-
-![create app](images/create-app.png)
 
 # 打开示例工程
 
@@ -40,11 +37,11 @@ git clone git@github.com:avos/paas.product.git
 
 ![import project](images/intellij-import.png)
 
-### 
+
 
 ### 修改AppKey和AppId
 
-
+![update keys](images/android-keys.png)
 
 ### 将sdk所在的位置，如下图所示
 
