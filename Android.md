@@ -43,8 +43,5 @@ git clone git@github.com:avos/paas.product.git
 
 ![update keys](images/android-keys.png)
 
-### 将sdk所在的位置，如下图所示
-
-![add sdk](images/add-avoscloud-sdk.png)
 
 
