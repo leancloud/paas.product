@@ -1,6 +1,6 @@
 # 欢迎使用AVOS Cloud
 
-本教程将会向您展示如何使用AVOS Cloud SDK开发一个简单的图片应用。
+本教程将会向您展示如何使用AVOS Cloud SDK开发一个简单的图片应用。 借助AVOS Cloud，您将不需要编写任何服务器端代码、也不需要维护任何服务器。一切将由AVOS Cloud帮您处理。
 
 # 申请AVOS Cloud帐号
 
