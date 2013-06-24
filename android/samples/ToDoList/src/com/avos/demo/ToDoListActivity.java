@@ -105,8 +105,8 @@ public class ToDoListActivity extends ListActivity {
 					String name = extras.getString("name");
 					ParseObject todo = new ParseObject(className);
 					todo.put("name", name);
-                    //ParseACL acl = todo.getACL();
-                    //acl.setPublicReadAccess(false);
+                    ParseACL acl = todo.getACL();
+                    acl.setPublicReadAccess(false);
 					try {
 						todo.save();
 					} catch (ParseException e) {
