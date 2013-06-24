@@ -116,7 +116,8 @@
 
 #pragma mark - String Util
 + (NSString *)MIMEType:(NSString *)filePathOrName;
-
++ (NSString *)MIMETypeFromPath:(NSString *)fullPath;
++ (NSString *)contentTypeForImageData:(NSData *)data;
 
 #pragma mark - Something about log
 
